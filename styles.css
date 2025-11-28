@@ -46,12 +46,12 @@ body{
 }
 
 .titulo {
-  font-size: 4.5em;
+  font-size: 4em;
   font-style: normal;
 }
 
 p{
-  font-size: 2.8em;
+  font-size: 2.5em;
 }
 
 .violeth{
@@ -64,24 +64,25 @@ p{
   border-radius: 10%;
 }
 
-.gif{
-  width: 20vw;
-}
+
 
 /* Ajustes adicionales para móviles pequeños */
-@media (max-width: 1200px) {
+@media (max-width: 480px) {
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 .main {
   padding: 20px; /* Padding reducido y relativo */
   max-width: 1200px; /* Limita el ancho máximo */
-  margin: 0 20px; /* Centra el contenido */
+  margin: 0 auto; /* Centra el contenido */
+  align-items: center;
+  text-align: center;
+  color:#ffffff;
 }
 .section {
   display: flex; /* Cambia a flexbox para mejor responsividad */
   flex-wrap: wrap; /* Permite que los elementos se envuelvan */
   justify-content: center; /* Centra los elementos */
   align-items: center;
-  margin: 100px 35px;
+  margin: 20px 0;
   gap: 20px; /* Espacio entre elementos */
 }
 .section h1 {
@@ -90,23 +91,18 @@ p{
 }
 .section div {
   flex: 1; /* Permite que el div se expanda */
-  min-width: 700px; /* Mínimo ancho para evitar que se comprima demasiado */
+  min-width: 300px; /* Mínimo ancho para evitar que se comprima demasiado */
   text-align: justify;
 }
 .section img {
-  width: 100%;
-  height: auto; /* Mantiene la proporción */
-}
-
-.moon{
-  max-width: 80%; /* Hace las imágenes responsive */
+  max-width: 100%; /* Hace las imágenes responsive */
   height: auto; /* Mantiene la proporción */
 }
   .titulo {
-    font-size: 6rem;
+    font-size: 2.4rem;
   }
   p {
-    font-size: 4rem;
+    font-size: 1.6rem;
   }
   .section div {
     min-width: 100%; /* Fuerza apilamiento vertical */
@@ -114,10 +110,12 @@ p{
   .section img {
     margin: 0.5em;
   }
-
+  .moon{
+  width: 100%;
+  border-radius: 10%;
+}
 .gif{
-  max-width: 80%;
-  height: auto;
+  width: 70%;
 }
 }
 
