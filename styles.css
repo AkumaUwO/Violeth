@@ -65,7 +65,7 @@ p{
 }
 
 /* Ajustes adicionales para móviles pequeños */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 body {
   font-family: "Dancing Script", cursive;
@@ -107,7 +107,7 @@ body {
 }
 
 .moon{
-  max-width: 100%; /* Hace las imágenes responsive */
+  max-width: 80%; /* Hace las imágenes responsive */
   height: auto; /* Mantiene la proporción */
 }
   .titulo {
