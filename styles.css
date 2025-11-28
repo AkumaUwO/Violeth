@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body {
+  font-family: "Dancing Script", cursive;
+  background-image: url("./sources/images/fondo.webp");
+  background-size: cover;
+  background-attachment: fixed; /* Para que el fondo no se mueva en scroll en móviles */
+  scroll-behavior: smooth;
+  margin: 0; /* Reset margin para mejor control */
+  padding: 0; /* Reset padding */
+}
+
+.main {
+  padding: 20px; /* Padding reducido y relativo */
+  max-width: 1200px; /* Limita el ancho máximo */
+  margin: 0 auto; /* Centra el contenido */
+  align-items: center;
+  text-align: center;
+  color: #b2edfc;
+  text-shadow: 1.5px 1px 0 rgb(87, 230, 255), 2px 2px 0 rgb(51, 53, 218);
+}
+
+.section {
+  display: flex; /* Cambia a flexbox para mejor responsividad */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  justify-content: center; /* Centra los elementos */
+  align-items: center;
+  margin: 20px 0;
+  gap: 20px; /* Espacio entre elementos */
+}
+
+.section h1 {
+  text-align: center;
+  width: 100%; /* Ocupa todo el ancho en flexbox */
+}
+
+.section div {
+  flex: 1; /* Permite que el div se expanda */
+  min-width: 300px; /* Mínimo ancho para evitar que se comprima demasiado */
+  text-align: justify;
+}
+
+.section img {
+  max-width: 100%; /* Hace las imágenes responsive */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10%;
+  margin: 1em; /* Margen reducido */
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.titulo {
+  font-size: 2.5rem; /* Usa rem para escalabilidad */
+  font-style: normal;
+}
+
+p {
+  font-size: 1.5rem; /* Reducido para mejor legibilidad en móviles */
+}
+
+.violeth {
+  max-width: 100%; /* Responsive */
+  height: auto;
+  border-radius: 5%;
+}
+
+.gatito-durmiendo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.moon {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+/* Media Queries para responsividad */
+
+/* Tablet (768px a 1024px) */
+@media (min-width: 768px) {
+  .main {
+    padding: 50px;
+  }
+
+  .titulo {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .section img {
+    max-width: 300px; /* Tamaño fijo para tablets */
+  }
+
+  .violeth {
+    max-width: 300px;
+  }
+
+  .moon {
+    max-width: 500px;
+  }
+}
+
+/* Desktop (1024px en adelante) */
+@media (min-width: 1024px) {
+  .main {
+    padding: 100px;
+  }
+
+  .titulo {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+
+  .section {
+    display: grid; /* Vuelve a grid en desktop */
+    grid-template-columns: 1fr 1fr; /* Dos columnas: texto e imagen */
+    gap: 20px;
+  }
+
+  .section img {
+    width: 25em; /* Tamaño original en desktop */
+    height: auto;
+  }
+
+  .violeth {
+    height: 20em;
+  }
+
+  .moon {
+    width: 60em;
+  }
+}
+
+/* Ajustes adicionales para móviles pequeños */
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .section div {
+    min-width: 100%; /* Fuerza apilamiento vertical */
+  }
+
+  .section img {
+    margin: 0.5em;
+  }
+}
