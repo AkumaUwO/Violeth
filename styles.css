@@ -71,22 +71,10 @@ p{
 /* Ajustes adicionales para móviles pequeños */
 @media (max-width: 1200px) {
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-body {
-  font-family: "Dancing Script", cursive;
-  background-image: url("./sources/images/fondo.webp");
-  background-size: cover;
-  background-attachment: fixed; /* Para que el fondo no se mueva en scroll en móviles */
-  scroll-behavior: smooth;
-  margin: 0; /* Reset margin para mejor control */
-  padding: 0; /* Reset padding */
-}
 .main {
   padding: 20px; /* Padding reducido y relativo */
   max-width: 1200px; /* Limita el ancho máximo */
   margin: 0 20px; /* Centra el contenido */
-  align-items: center;
-  text-align: center;
-  color:#ffffff;
 }
 .section {
   display: flex; /* Cambia a flexbox para mejor responsividad */
