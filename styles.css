@@ -111,10 +111,10 @@ body {
   height: auto; /* Mantiene la proporción */
 }
   .titulo {
-    font-size: 2rem;
+    font-size: 6rem;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 4rem;
   }
   .section div {
     min-width: 100%; /* Fuerza apilamiento vertical */
