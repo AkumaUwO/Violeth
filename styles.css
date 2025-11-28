@@ -10,12 +10,11 @@ body{
 }
 
 .main{
-  padding: 100px;
+  padding: 0% 15%;
   align-items: center;
   text-align: center;
   color:#ffffff;
     text-shadow:
-
     0 0 20px #0ff,
     0 0 30px #0ff,
     0 0 40px #0ff,
@@ -46,22 +45,26 @@ body{
 }
 
 .titulo {
-  font-size: 4em;
+  font-size: 5em;
   font-style: normal;
 }
 
 p{
-  font-size: 2.5em;
+  font-size: 2.8em;
 }
 
 .violeth{
-  height: 20em;
+  height: 25em;
   border-radius: 5%;
 }
 
 .moon{
   width: 60em;
   border-radius: 10%;
+}
+
+.gif{
+  width: 20%;
 }
 
 
